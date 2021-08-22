@@ -4,10 +4,10 @@ import java.util.Random;
 
 public class Employee {
 
-	int FullDayHour = 8;
-	int WagePerHour = 20;
-	int DailyWage = FullDayHour * WagePerHour;
-	int WageforPartTimeWorking = 8;
+	static int FullDayHour = 8;
+	static int WagePerHour = 20;
+	static int DailyWage = FullDayHour * WagePerHour;
+	static int WageforPartTimeWorking = 8;
 	static int isPresent=isPresent();
 
 	
@@ -33,6 +33,9 @@ public class Employee {
         			break;
         		}
                 
+                System.out.println("Daily wage of employee " + DailyWage);
+        		System.out.println("Wages for month" + DailyWage * 30);
+                
         }
 
 
@@ -49,3 +52,5 @@ public class Employee {
         
         
 }
+
+
