@@ -9,6 +9,10 @@ public class Employee {
 	static int DailyWage = FullDayHour * WagePerHour;
 	static int WageforPartTimeWorking = 8;
 	static int isPresent=isPresent();
+	static int workingDays;
+	static int workingHours;
+	static int wages;
+	
 
 	
         public static void main(String[] args) {
@@ -35,6 +39,7 @@ public class Employee {
                 
                 System.out.println("Daily wage of employee " + DailyWage);
         		System.out.println("Wages for month" + DailyWage * 30);
+        		System.out.println("Wages for month on condition: " + getWagesForMonth());
                 
         }
 
@@ -49,7 +54,18 @@ public class Employee {
         	   return isPresent;
         }
         
-        
+        private static long getWagesForMonth() {
+    		int workingHours = 0;
+    		workingDays = 0;
+    		while (workingDays < FullDayHour && workingHours < WagePerHour) {
+    			    workingDays++;
+    				workingHours += FullDayHour;
+    				wages += DailyWage;
+    			
+    		}
+    		return wages;
+    	}
+
         
 }
 
