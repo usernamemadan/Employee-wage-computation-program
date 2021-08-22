@@ -1,4 +1,4 @@
-package com.employee;
+ppackage com.employee;
 
 import java.util.Random;
 
@@ -7,6 +7,7 @@ public class Employee {
 	int FullDayHour = 8;
 	int WagePerHour = 20;
 	int DailyWage = FullDayHour * WagePerHour;
+	int WageforPartTimeWorking = 8;
 
 	
         public static void main(String[] args) {
