@@ -4,6 +4,11 @@ import java.util.Random;
 
 public class Employee {
 
+	int FullDayHour = 8;
+	int WagePerHour = 20;
+	int DailyWage = FullDayHour * WagePerHour;
+
+	
         public static void main(String[] args) {
 
                 System.out.println("Welcome to Employee Wage Computation Program");
@@ -19,9 +24,11 @@ public class Employee {
 
 
         public static boolean isEmployeePresent() {
-        	Random rd = new Random();
-        	return rd.nextBoolean();
+        	   Random rd = new Random();
+        	   return rd.nextBoolean();
         }
+        
+        
 }
 
 
